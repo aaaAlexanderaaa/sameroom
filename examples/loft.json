@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "loft",
+  "name": "一室一厅 · 第二套模板",
+  "description": "可自由调整的两居示例房间，方便试试多房间整理与摆放。",
+  "schematic": true,
+  "sourceLabel": "示例模板 · 非实时监控",
+  "rooms": [
+    {
+      "id": "study",
+      "name": "办公角",
+      "kind": "room",
+      "origin": [-3.5, 0, -1],
+      "size": [4.8, 4.0],
+      "color": "#dce9eb"
+    },
+    {
+      "id": "living",
+      "name": "生活区",
+      "kind": "room",
+      "origin": [1.5, 0, -1],
+      "size": [4.8, 4.0],
+      "color": "#e9e2d6"
+    },
+    {
+      "id": "storage",
+      "name": "储物区",
+      "kind": "room",
+      "origin": [-3.5, 0, 3.2],
+      "size": [4.8, 3.8],
+      "color": "#e2e8d6"
+    },
+    {
+      "id": "unplaced",
+      "name": "待定位",
+      "kind": "unplaced",
+      "origin": [1.5, 0, 3.2],
+      "size": [4.8, 3.0],
+      "color": "#dce3ee"
+    },
+    {
+      "id": "remote",
+      "name": "远端节点 · 逻辑区域",
+      "kind": "remote",
+      "origin": [8.4, 0, -1.0],
+      "size": [4.0, 6.0],
+      "color": "#dbe1ee"
+    }
+  ],
+  "assets": [
+    {
+      "id": "mini",
+      "name": "迷你主机",
+      "kind": "computer",
+      "width": 0.45,
+      "height": 0.18,
+      "depth": 0.45,
+      "color": "#bdc9d6",
+      "provenance": "Procedural placeholder; not measured hardware"
+    },
+    {
+      "id": "tower",
+      "name": "服务器",
+      "kind": "server",
+      "width": 0.4,
+      "height": 0.75,
+      "depth": 0.5,
+      "color": "#43566d",
+      "provenance": "Procedural placeholder"
+    },
+    {
+      "id": "plug",
+      "name": "智能插座",
+      "kind": "plug",
+      "width": 0.22,
+      "height": 0.24,
+      "depth": 0.18,
+      "color": "#f2eadb",
+      "provenance": "Procedural placeholder"
+    },
+    {
+      "id": "litter",
+      "name": "猫砂袋",
+      "kind": "box",
+      "width": 0.24,
+      "height": 0.4,
+      "depth": 0.18,
+      "color": "#e8b267",
+      "provenance": "Synthetic stock illustration"
+    },
+    {
+      "id": "robot",
+      "name": "陶瓷机器人 · 离线资产",
+      "kind": "glb",
+      "url": "/models/offline-robot.glb",
+      "width": 0.35,
+      "height": 0.6,
+      "depth": 0.3,
+      "color": "#80cfba",
+      "provenance": "Authored offline fixture, not AI-generated"
+    },
+    {
+      "id": "plant",
+      "name": "盆栽",
+      "kind": "plant",
+      "width": 0.4,
+      "height": 0.7,
+      "depth": 0.4,
+      "color": "#83b79b",
+      "provenance": "Procedural decoration"
+    }
+  ],
+  "entities": [
+    {
+      "id": "loft-pc",
+      "name": "Loft PC",
+      "category": "host",
+      "scope": "home",
+      "lifecycle": "active",
+      "locationId": "study",
+      "position": [0, 0, 0],
+      "rotation": 0,
+      "placementConfirmed": true,
+      "assetId": "mini",
+      "description": "",
+      "notes": "",
+      "tags": [],
+      "source": "sample",
+      "asOf": "2026-11-12"
+    },
+    {
+      "id": "loft-edge",
+      "name": "远端开发机",
+      "category": "host",
+      "scope": "remote",
+      "lifecycle": "active",
+      "locationId": "remote",
+      "position": [0, 0, 0],
+      "rotation": 0,
+      "placementConfirmed": true,
+      "assetId": "tower",
+      "description": "",
+      "notes": "",
+      "tags": [],
+      "source": "sample",
+      "asOf": "2026-11-12"
+    }
+  ],
+  "services": [],
+  "stocks": [
+    {
+      "id": "cat-litter",
+      "name": "猫砂库存区",
+      "sku": "cat-litter-6l",
+      "unit": "袋",
+      "quantity": 5,
+      "threshold": 2,
+      "locationId": "storage",
+      "position": [0, 0, 0],
+      "assetId": "litter",
+      "capacity": 24,
+      "sample": true
+    }
+  ],
+  "openQuestions": []
+}

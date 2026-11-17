@@ -1,0 +1,9 @@
+{
+  "prompt": "A small stylized ceramic desk robot, rounded ivory body, two short legs, teal face visor, simple clean silhouette, one standalone object, no base, no background",
+  "style": "cartoon",
+  "version": "G1-Turbo",
+  "faceCount": 10000,
+  "outputFormat": ["glb"],
+  "enablePbr": true,
+  "aiPredictSize": false
+}

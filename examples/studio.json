@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "id": "studio",
+  "name": "小小工作室",
+  "description": "可自由调整的入门示例房间，方便动手试试摆物件和改布局。",
+  "schematic": true,
+  "sourceLabel": "示例模板 · 非实时监控",
+  "rooms": [
+    {
+      "id": "study",
+      "name": "工作区",
+      "kind": "room",
+      "origin": [-2.7, 0, -2.4],
+      "size": [4.8, 4.0],
+      "color": "#dce9eb"
+    },
+    {
+      "id": "living",
+      "name": "生活区",
+      "kind": "room",
+      "origin": [2.3, 0, -2.4],
+      "size": [4.8, 4.0],
+      "color": "#e9e2d6"
+    },
+    {
+      "id": "storage",
+      "name": "储物区",
+      "kind": "room",
+      "origin": [-2.7, 0, 1.8],
+      "size": [4.8, 3.8],
+      "color": "#e2e8d6"
+    },
+    {
+      "id": "unplaced",
+      "name": "待定位",
+      "kind": "unplaced",
+      "origin": [2.3, 0, 2.2],
+      "size": [4.8, 3.0],
+      "color": "#dce3ee"
+    },
+    {
+      "id": "remote",
+      "name": "远端节点 · 逻辑区域",
+      "kind": "remote",
+      "origin": [8.4, 0, -1.0],
+      "size": [4.0, 6.0],
+      "color": "#dbe1ee"
+    }
+  ],
+  "assets": [
+    {
+      "id": "mini",
+      "name": "迷你主机",
+      "kind": "computer",
+      "width": 0.45,
+      "height": 0.18,
+      "depth": 0.45,
+      "color": "#bdc9d6",
+      "provenance": "Procedural placeholder; not measured hardware"
+    },
+    {
+      "id": "tower",
+      "name": "服务器",
+      "kind": "server",
+      "width": 0.4,
+      "height": 0.75,
+      "depth": 0.5,
+      "color": "#43566d",
+      "provenance": "Procedural placeholder"
+    },
+    {
+      "id": "plug",
+      "name": "智能插座",
+      "kind": "plug",
+      "width": 0.22,
+      "height": 0.24,
+      "depth": 0.18,
+      "color": "#f2eadb",
+      "provenance": "Procedural placeholder"
+    },
+    {
+      "id": "litter",
+      "name": "猫砂袋",
+      "kind": "box",
+      "width": 0.24,
+      "height": 0.4,
+      "depth": 0.18,
+      "color": "#e8b267",
+      "provenance": "Synthetic stock illustration"
+    },
+    {
+      "id": "robot",
+      "name": "陶瓷机器人 · 离线资产",
+      "kind": "glb",
+      "url": "/models/offline-robot.glb",
+      "width": 0.35,
+      "height": 0.6,
+      "depth": 0.3,
+      "color": "#80cfba",
+      "provenance": "Authored offline fixture, not AI-generated"
+    },
+    {
+      "id": "plant",
+      "name": "盆栽",
+      "kind": "plant",
+      "width": 0.4,
+      "height": 0.7,
+      "depth": 0.4,
+      "color": "#83b79b",
+      "provenance": "Procedural decoration"
+    }
+  ],
+  "entities": [
+    {
+      "id": "studio-mini",
+      "name": "Studio mini",
+      "category": "host",
+      "scope": "home",
+      "lifecycle": "active",
+      "locationId": "study",
+      "position": [-0.8, 0, 0],
+      "rotation": 0,
+      "placementConfirmed": true,
+      "assetId": "mini",
+      "description": "示例工作站",
+      "notes": "",
+      "tags": [],
+      "source": "sample",
+      "asOf": "2026-11-12"
+    },
+    {
+      "id": "home-nas",
+      "name": "Home NAS",
+      "category": "host",
+      "scope": "home",
+      "lifecycle": "active",
+      "locationId": "study",
+      "position": [0.8, 0, 0],
+      "rotation": 0,
+      "placementConfirmed": true,
+      "assetId": "tower",
+      "description": "",
+      "notes": "",
+      "tags": [],
+      "source": "sample",
+      "asOf": "2026-11-12"
+    },
+    {
+      "id": "desk-plug",
+      "name": "桌面插座",
+      "category": "device",
+      "scope": "home",
+      "lifecycle": "active",
+      "locationId": "living",
+      "position": [-0.8, 0, 0],
+      "rotation": 0,
+      "placementConfirmed": true,
+      "assetId": "plug",
+      "description": "",
+      "notes": "",
+      "tags": [],
+      "source": "sample",
+      "asOf": "2026-11-12"
+    },
+    {
+      "id": "cloud-node",
+      "name": "Cloud node",
+      "category": "host",
+      "scope": "remote",
+      "lifecycle": "active",
+      "locationId": "remote",
+      "position": [0, 0, 0],
+      "rotation": 0,
+      "placementConfirmed": true,
+      "assetId": "tower",
+      "description": "",
+      "notes": "",
+      "tags": [],
+      "source": "sample",
+      "asOf": "2026-11-12"
+    },
+    {
+      "id": "little-robot",
+      "name": "我的小机器人",
+      "category": "object",
+      "scope": "home",
+      "lifecycle": "active",
+      "locationId": "living",
+      "position": [0.8, 0, 0],
+      "rotation": 0,
+      "placementConfirmed": true,
+      "assetId": "robot",
+      "description": "离线制作的展示物件，可以记录故事。",
+      "notes": "每件小东西都可以有自己的位置与故事。",
+      "tags": [],
+      "source": "sample",
+      "asOf": "2026-11-12"
+    }
+  ],
+  "services": [
+    {
+      "id": "demo-service",
+      "entityId": "studio-mini",
+      "name": "服务页面示例",
+      "version": "demo",
+      "url": "http://localhost/demo/service",
+      "embed": "allowed",
+      "description": "本应用提供的演示页面，非真实监控。",
+      "asOf": "sample",
+      "demo": true
+    }
+  ],
+  "stocks": [
+    {
+      "id": "cat-litter",
+      "name": "猫砂库存区",
+      "sku": "cat-litter-6l",
+      "unit": "袋",
+      "quantity": 3,
+      "threshold": 2,
+      "locationId": "storage",
+      "position": [0, 0, 0],
+      "assetId": "litter",
+      "capacity": 24,
+      "sample": true
+    }
+  ],
+  "openQuestions": []
+}

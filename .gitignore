@@ -1,0 +1,38 @@
+node_modules/
+dist/
+.env*
+!.env.example
+test-results/
+playwright-report/
+.cache/
+*.log
+.DS_Store
+public/vendor/
+tmp/
+.playwright-cli/
+.playwright-mcp/
+
+# Private credentials, runtime state, reference photos, and local job journals
+/data/private/
+/data/dashboard/state.json
+/data/dashboard/backups/
+/data/layout-reference/
+/data/jobs/
+/data/uploads/
+/data/model-references/
+/data/calibration-reference/
+/data/context-correction/
+/data/detail-reference/
+/data/homelab-reference/
+/data/net-dimensions/
+/data/owner-adaptation/
+/data/wet-correction/
+/data/commands/
+/docs/evidence/
+
+# Uncalibrated intermediate provider downloads from living-20261116 batch (~210 MB)
+/public/generated/living-20261116-*/
+
+# Developer-local raw/uncompressed 3D model originals (only compressed GLBs enter Git)
+*.raw.glb
+/public/generated/*-raw/

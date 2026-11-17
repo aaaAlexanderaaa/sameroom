@@ -1,0 +1,22 @@
+services:
+  homelab3d:
+    build: .
+    image: homelab3d:local
+    container_name: homelab3d
+    restart: unless-stopped
+    ports:
+      - "0.0.0.0:4100:4100"
+    env_file:
+      - path: .env.local
+        required: false
+    environment:
+      DASH_PORT: "4100"
+      DASH_BIND_HOST: "0.0.0.0"
+      DASH_ALLOW_REMOTE_PEERS: "1"
+      DASH_ALLOWED_HOSTS: "${DASH_ALLOWED_HOSTS:-localhost,127.0.0.1,host.docker.internal}"
+      DASH_PUBLIC_ORIGINS: "${DASH_PUBLIC_ORIGINS:-}"
+    volumes:
+      - ./data:/app/data
+      - ./public/generated:/app/public/generated
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

@@ -1,0 +1,203 @@
+.layout-editor {
+  position: fixed;
+  inset: 0;
+  background: #eeeae3;
+}
+.layout-editor .editor-viewport {
+  inset: 76px 360px 0 0;
+}
+.editor-toolbar {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #faf9f5f5;
+  box-shadow: 0 4px 24px #4b44350c;
+  z-index: 4;
+}
+.editor-toolbar strong {
+  font-size: 14px;
+  font-weight: 500;
+}
+.editor-toolbar strong span {
+  color: #8d937f;
+  font-size: 11px;
+  margin-left: 10px;
+}
+.editor-history {
+  display: flex;
+  gap: 5px;
+  margin-left: auto;
+}
+.editor-toolbar .icon-button {
+  width: 40px;
+  height: 40px;
+}
+.editor-panel {
+  position: absolute;
+  top: 88px;
+  right: 16px;
+  bottom: 16px;
+  width: 328px;
+  padding: 18px;
+  border-radius: 14px;
+  background: #faf9f5f5;
+  overflow: auto;
+  scrollbar-width: thin;
+  overscroll-behavior: contain;
+}
+.editor-panel fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+.editor-modes {
+  display: flex;
+  gap: 6px;
+}
+.editor-modes .secondary {
+  padding: 9px;
+  flex: 1;
+}
+.editor-modes [aria-pressed="true"] {
+  background: #dce8da;
+  border-color: #9eb299;
+}
+.editor-framing {
+  margin-top: 6px;
+}
+.editor-snap {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 14px 0;
+  font-size: 11px;
+}
+.editor-help {
+  font-size: 11px;
+  line-height: 1.8;
+  color: #858c7d;
+}
+.editor-object {
+  border-top: 1px solid #e1e4d9;
+  padding-top: 18px;
+}
+.editor-object h2 {
+  font-size: 17px;
+  font-weight: 550;
+  margin-bottom: 8px;
+}
+.editor-nudge {
+  display: flex;
+  gap: 5px;
+}
+.editor-nudge button {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 5px;
+}
+.editor-section {
+  padding: 16px 0;
+  border-top: 1px solid #e1e4d9;
+}
+.editor-section summary {
+  cursor: pointer;
+  font-size: 12px;
+}
+.editor-section .editor-help {
+  margin-top: 10px;
+}
+.editor-footnote {
+  padding-top: 12px;
+}
+.reference-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 12px;
+}
+.reference-photos img {
+  width: 100%;
+  border-radius: 5px;
+}
+.editor-exit {
+  padding: 14px;
+  background: #f7eedc;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.editor-exit p {
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+.editor-exit > div {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.editor-panel .notice .text-link {
+  display: block;
+  padding-top: 10px;
+}
+@media (max-width: 700px) {
+  .layout-editor .editor-viewport {
+    inset: 116px 0 calc(45dvh + 4px);
+  }
+  .editor-toolbar {
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 6px 10px;
+    padding: 8px;
+  }
+  .editor-toolbar strong {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    white-space: nowrap;
+    line-height: 20px;
+  }
+  .editor-toolbar strong span {
+    margin-left: 5px;
+  }
+  .editor-toolbar > .primary {
+    grid-column: 3;
+    grid-row: 2;
+    margin-left: auto;
+  }
+  .editor-toolbar > .secondary {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .editor-history {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+    margin-left: 0;
+  }
+  .editor-panel {
+    top: 55dvh;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    width: auto;
+    padding: 16px;
+  }
+  .editor-toolbar button,
+  .editor-nudge button {
+    min-height: 44px;
+  }
+}
+
+/* Transform handles must receive pointer events even when a label overlaps. */
+.layout-editor .scene-label-layer button {
+  pointer-events: none;
+}

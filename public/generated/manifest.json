@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "models": [
+    {
+      "name": "corrugated-cat-bed-text-20261115",
+      "providerId": "lux3d",
+      "url": "/generated/corrugated-cat-bed-text-20261115/0.glb",
+      "bytes": 554908,
+      "sha256": "ad11414ddeaa8c4a301bbf9541d685b3605b14abbbeb8a42a973e5175fc58a81"
+    },
+    {
+      "name": "generic-minipc-reference-20261113",
+      "providerId": "lux3d",
+      "url": "/generated/generic-minipc-reference-20261113/0.glb",
+      "bytes": 146540,
+      "sha256": "480610f5f3d06255f1e8e7d899432c988fa754bef9f3cb67ba572783d1b8cc44"
+    },
+    {
+      "name": "homepod-mini-reference-20261113",
+      "providerId": "lux3d",
+      "url": "/generated/homepod-mini-reference-20261113/0.glb",
+      "bytes": 191048,
+      "sha256": "00d1407ce9e77400c404818136834ffa771a88cec553b735903e51571a595e4d"
+    },
+    {
+      "name": "image-workflow-smoke",
+      "providerId": "lux3d",
+      "url": "/generated/image-workflow-smoke/0.glb",
+      "bytes": 146444,
+      "sha256": "342dba0f887cddc62a3377f60fd70bd2555230c8c8e2f3deb40466b933c57ead"
+    },
+    {
+      "name": "mac-mini-m1-multiview-20261115",
+      "providerId": "lux3d",
+      "url": "/generated/mac-mini-m1-multiview-20261115/0.glb",
+      "bytes": 481712,
+      "sha256": "507474e44a06936e5eb88975b9c7da105c576bc2c870160c2889dcfe6153fd1c"
+    },
+    {
+      "name": "mac-mini-m4-multiview-20261115",
+      "providerId": "lux3d",
+      "url": "/generated/mac-mini-m4-multiview-20261115/0.glb",
+      "bytes": 1315616,
+      "sha256": "bbcffd512b20d255dc4fced90311b3426a7857e0552a1e6b41c2329d7bd1eb7f"
+    },
+    {
+      "name": "rog-g700-multiview-20261115",
+      "providerId": "lux3d",
+      "url": "/generated/rog-g700-multiview-20261115/0.glb",
+      "bytes": 542456,
+      "sha256": "227f056e1473ab2e70c406b20cf9f284bc9f01d79c044b6a7a1a777af8583afe"
+    },
+    {
+      "name": "starter-robot",
+      "providerId": "lux3d",
+      "url": "/generated/starter-robot/0.glb",
+      "bytes": 132772,
+      "sha256": "2d056604144bfbc7a41ccd028f5b3b4acd29bdb8540b5b281fd9adca126f42a2"
+    }
+  ]
+}

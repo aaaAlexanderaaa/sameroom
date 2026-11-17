@@ -1,0 +1,14 @@
+.git/
+node_modules/
+dist/
+.cache/
+test-results/
+playwright-report/
+tmp/
+*.log
+.DS_Store
+.env*
+data/
+public/vendor/
+public/generated/
+.playwright-mcp/
